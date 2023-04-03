@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularP1</title>
+</head>
+<body>
+
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    
+    <form id="login-form">
+      <input type="text" name="login" id="login" class="login-form-field" [(ngModel)]="login" placeholder="Login">
+      
+      <input type="password" name="password" id="password" class="login-form-field" [(ngModel)]="password" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
+<p>Salut ethan</p>
+<h1>
+  {{title}}
+</h1>
+<h2>
+  Votre login : {{ login }} <br> et mon mdp : {{ password }}
+</h2>
+<form name="frmlogin">
+
+</form></body>
+</html>
