@@ -8,10 +8,20 @@ import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpClientModule } from '@angular/common/http';
+import { MedecinsComponent } from 'src/app/medecins/medecins.component';
+import { NavbarComponent } from 'src/app/navbar/navbar.component';
+import { VisitesComponent } from 'src/app/visites/visites.component';
+import { DataService } from 'src/app/services/app.service.data';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    MedecinsComponent,
+    NavbarComponent,
+    VisitesComponent
   ],
   imports: [
     BrowserModule,
@@ -19,10 +29,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     RouterModule,
     NgbModule,
-
-
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { MedecinsComponent } from './medecins/medecins.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VisitesComponent } from './visites/visites.component';
+
 const appRoutes: Routes = [
   { path: '', component: ConnexionComponent },
 { path: 'medecins', component: MedecinsComponent },
